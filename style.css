@@ -86,11 +86,13 @@ body {
 .ear {
   left: 11.25em;
   top: 0.93em;
+  transform-origin: center bottom;
 }
 .ear:before {
   content: "";
   left: 5.62em;
   bottom: -0.31em;
+  transform-origin: center bottom;
 }
 .nose {
   position: absolute;
@@ -144,3 +146,30 @@ body {
     font-size: 9px;
   }
 }
+
+@keyframes bear-breathe {
+  0%, 100% { transform: translateX(-50%) scaleY(1); }
+  50% { transform: translateX(-50%) scaleY(1.02); }
+}
+
+@keyframes ear-wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(8deg); }
+  75% { transform: rotate(-8deg); }
+}
+
+@keyframes blink {
+  0%, 92%, 100% { transform: scaleY(1); }
+  94%, 96% { transform: scaleY(0.1); }
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-8deg); }
+}
+
+/* apply */
+.bear { animation: bear-breathe 3s ease-in-out infinite; }
+.ear,
+.ear:before { animation: ear-wiggle 2.8s ease-in-out infinite; }
+.eye { animation: blink 4.5s ease-in-out infinite; }
