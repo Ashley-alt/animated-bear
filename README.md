@@ -42,9 +42,7 @@ Tech Stack
 No build tools, no dependencies.
 
 
-
-
-https://github.com/user-attachments/assets/2401eaeb-6000-489b-b320-d7ff6b22da24
+https://github.com/user-attachments/assets/70b7f63b-cf33-4d54-a326-b02e78c557d5
 
 
 
